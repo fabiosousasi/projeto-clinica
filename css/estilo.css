@@ -1,0 +1,276 @@
+/* INICIO REGRAS CSS COMUNS À TODOS OS DISPOSITIVOS */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro';
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+p,
+li {
+    color: #646464;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+p {
+    font-size: 20px;
+}
+
+/* TOPO */
+header {
+    display: flex;
+    justify-content: center;
+    background: #008cff;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+main{
+    margin-top: 64px;
+}
+
+.topo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 65%;
+}
+
+.topo-logo-container img {
+    width: 120px;
+}
+
+.topo-menu-container nav a {
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    padding: 2px;
+    margin: 0 10px;
+}
+
+.topo-menu-container a:hover {
+    color: #004d8b;
+    text-decoration: underline;
+}
+
+/* CORPO SESSAO 1 */
+.banner-sessao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    height: 550px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../assets/recepcao.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-titulo {
+    width: 65%;
+}
+
+.banner-titulo h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+/* CORPO SESSAO 2 */
+.sobre-sessao {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.sobre-container {
+    width: 740px;
+}
+
+.sobre-titulo-descricao-container h2 {
+    text-align: center;
+}
+
+.sobre-titulo-descricao-container p {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.sobre-beneficios-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sobre-vantagens-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre-vantagens-container h3 {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.sobre-vantagens-container li {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+/* CORPO SESSAO 3 */
+.especialidades-sessao {
+    text-align: center;
+    padding: 0 20px 30px 20px;
+}
+
+.especialidades-sessao p {
+    margin: 15px 0;
+}
+
+.especialidades-grid-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.especialidades-grids {
+    box-shadow: 0 0 15px #646464;
+    border-radius: 8px;
+    margin: 15px 20px;
+}
+
+.especialidades-grids p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.especialidades-grids img {
+    border-radius: 8px 8px 0 0;
+    width: 300px;
+}
+
+.especialidades-botao {
+    text-decoration: none;
+    font-weight: 700;
+    color: #fff;
+    background-color: #008cff;
+    padding: 10px 20px;
+}
+
+/* CORPO SESSAO 4 */
+.contato-sessao {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.contato-sessao p{
+    margin: 20px 0;
+}
+
+.contato-sessao iframe{
+    width: 100%;
+    height: 450px;
+}
+
+/* FOOTER */
+.rodape-sessao{
+    padding: 20px;
+    background-color: #004f8f;
+    text-align: center;
+}
+
+.rodape-sessao img{
+    width: 120px;
+}
+
+.rodape-sessao p{
+    font-size: 18px;
+    margin-bottom: 15px;
+    color:#fff;
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+
+    h2 {
+        font-size: 28px;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    /* TOPO */
+    header {
+        padding: 0;
+    }
+
+    .banner-sessao{
+        height: 350px;
+    }
+
+    .topo-container {
+        justify-content: center;
+    }
+
+    .topo-menu-container {
+        width: 100%;
+        border-top: 1px dashed #7696ff;
+    }
+
+    .topo-menu-container nav {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .topo-menu-container nav a {
+        font-size: 15px;
+        margin: 0 5px;
+    }
+
+    /* CORPO SESSAO 1 */
+    .banner-titulo h1 {
+        font-size: 32px;
+    }
+
+    /* CORPO SESSAO 2 */
+    .sobre-sessao {
+        padding: 30px 20px;
+    }
+
+    .sobre-imagem-medico-container {
+        display: none;
+    }
+
+    .sobre-vantagens-container h3 {
+        text-align: center;
+    }
+
+    .sobre-vantagens-container ul {
+        margin-left: 20px;
+    }
+}

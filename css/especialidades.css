@@ -1,0 +1,219 @@
+/* INICIO REGRAS CSS COMUNS À TODOS OS DISPOSITIVOS */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro';
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+p,
+li {
+    color: #646464;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+p {
+    font-size: 20px;
+}
+
+/* TOPO */
+header {
+    display: flex;
+    justify-content: center;
+    background: #008cff;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+main {
+    margin-top: 64px;
+}
+
+.topo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 65%;
+}
+
+.topo-logo-container img {
+    width: 120px;
+}
+
+.topo-menu-container nav a {
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    padding: 2px;
+    margin: 0 10px;
+}
+
+.topo-menu-container a:hover {
+    color: #004d8b;
+    text-decoration: underline;
+}
+
+/* SESSAO 1 */
+.especialidades-sessao-1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.especialidades-sessao-1 h2 {
+    margin-top: 40px;
+}
+
+.menu-especialidades-container a {
+    text-decoration: underline;
+    text-decoration-color:#008cff;
+    color: #646464;
+    font-weight: 600;
+    margin: 10px;
+}
+
+/* SESSÕES TABELAS */
+.especialidades-container-tabelas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.grid-especialidades-titulo-descricao {
+    max-width: 700px;
+}
+
+.grid-especialidades-titulo-descricao h3 {
+    margin-top: 20px;
+}
+
+.espacamento-subtitulo{
+    margin-top: 30px;
+}
+
+.grid-especialidades-titulo-descricao p {
+    margin: 20px 0;
+}
+
+.grid-especialidades-imagem img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.grid-especialidades-tabela {
+    display: flex;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+th,
+td {
+    text-align: left;
+}
+
+th {
+    background-color: #1495ff;
+    color: #fff;
+    padding: 8px 0 8px 5px;
+}
+
+td {
+    padding: 0px 80px 0px 5px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #c5c5c5;
+}
+
+/* FOOTER */
+.rodape-sessao{
+    padding: 20px;
+    background-color: #004f8f;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.rodape-sessao img{
+    width: 120px;
+}
+
+.rodape-sessao p{
+    font-size: 18px;
+    margin-bottom: 15px;
+    color:#fff;
+}
+
+@media(max-width:800px){
+    .grid-especialidades-imagem img{
+        display: none;
+    }
+
+    td{
+        padding: 20px 10px 20px 5px;
+    }
+}
+
+@media(max-width:767px){
+    h2 {
+        font-size: 28px;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    /* TOPO */
+    header {
+        padding: 0;
+    }
+
+    .banner-sessao{
+        height: 350px;
+    }
+
+    .topo-container {
+        justify-content: center;
+    }
+
+    .topo-menu-container {
+        width: 100%;
+        border-top: 1px dashed #7696ff;
+    }
+
+    .topo-menu-container nav {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .topo-menu-container nav a {
+        font-size: 15px;
+        margin: 0 5px;
+    }
+
+    .especialidades-sessao-1{
+        margin-top: 120px;
+    }
+}
